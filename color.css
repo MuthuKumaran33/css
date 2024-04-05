@@ -1,0 +1,36 @@
+body{
+    padding: 10%;
+    font-size: 1.5rem;
+    padding-left: 20%;
+    padding-right: 10%;
+    padding-top: 20%;
+    padding-bottom: 502%;
+    padding: 20% 20% 30% 40%;
+    padding: 40% 50%;
+   
+}
+p{
+    color: #ffaa99;
+    text-indent:2em;
+    line-height: 1.8;
+    letter-spacing: 0.001em;
+    word-spacing: 0.4em;
+    font-weight: 100;
+    font-style: oblique;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+a{
+     text-decoration: line-through;
+     cursor: pointer;
+     color:blue;
+     font-style: oblique;
+}
+a:visited{
+    color: rgb(157, 198, 44);
+}
+a:active{
+    color: chocolate;
+}
+a:hover, a:focus{
+    color: brown;
+}
