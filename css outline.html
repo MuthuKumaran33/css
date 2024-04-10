@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outline</title>
+    <h2>Outline types</h2>
+</head>
+    <style>
+        p.a{
+            border: 1px solid rgb(3, 3, 3);
+            outline: 5px solid rgb(15, 226, 68);
+        }
+        p.b{
+            border: 1px none rgb(3, 3, 3);
+            outline: 5px dotted rgb(235, 13, 13);
+        }
+        p.c{
+            border: 1px hidden rgb(3, 3, 3);
+            outline: 5px dashed rgb(15, 149, 226);
+            outline-width: thin;
+            margin: 20px;
+            padding: 10px;
+            background-color: bisque;
+        }
+        p.d{
+            border: 1px none rgb(3, 3, 3);
+            outline-style:double;
+            outline-color:  rgb(235, 13, 205);;
+            margin: 70px;
+            padding: 20px;
+        }
+        p.e{
+            border: 1px solid rgb(255, 255, 255);
+            outline: 5px groove rgb(54, 13, 235);
+        }
+        p.f{
+            border: 1px solid rgb(245, 12, 12);
+            outline: 5px ridge rgb(15, 149, 226);
+            margin: 30px;
+            padding: 20px;
+        }
+        p.g{
+            border: 1px solid rgb(68, 4, 4);
+            outline: 5px inset rgb(235, 13, 205);
+            outline-width: thick;
+        }
+        p.h{
+            border: 1px solid rgb(165, 139, 139);
+            outline: 5px outset rgb(235, 139, 13);
+        }
+        p.i{
+            border: 1px solid rgb(68, 4, 4);
+            outline: 5px initial rgb(235, 13, 205);
+            margin: 50px;
+            padding: 20px;
+        }
+        p.j{
+            border: 1px solid rgb(5, 7, 114);
+            outline: 5px inherit rgb(1, 85, 64);
+        }
+
+    </style>
+
+<body>
+        <p class="a">This element has a black border and a green outline with a width of 10px. A solid line</p>
+        <p class="b">A dotted outline.</p>
+        <p class="c">A dashed outline.</p>
+        <p class="d">A double outline.</p>
+        <p class="e">A groove outline. The effect depends on the outline-color value.</p>
+        <p class="f">A ridge outline. The effect depends on the outline-color value.</p>
+        <p class="g">An inset outline. The effect depends on the outline-color value.</p>
+        <p class="h">An outset outline. The effect depends on the outline-color value.</p>
+        <p class="i">An initial outline. The effect depends on the outline-color value.</p>
+        <p class="j">An inherit outline. The effect depends on the outline-color value.</p>
+    </body>
+</html>

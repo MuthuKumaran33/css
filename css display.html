@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display sample</title>
+  <h2>Vijay (Actor)</h2>
+</head>
+        <style>
+                *{
+                    margin: 0;
+                    padding: 0%;
+                    box-sizing: border-box;
+                }
+                ul{
+                    list-style-type:none;
+                    margin: 0;
+                    padding: 0.5rem;
+                    background-color: bisque;
+                    text-align: right;
+                }
+                li{
+                    display: inline;
+                    flex-wrap: wrap;
+                   flex-flow: column;
+                   margin-right: 0.5rem;
+                }
+                 li a{ text-decoration: none;
+                   color: blue;
+                }
+                li a:hover,li a:focus{
+                    text-decoration: underline;
+                    color: crimson;
+                }
+                .new{
+                    background-color: aqua;
+                    width: 200px;
+                    height: 200px;
+                    margin: 2px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .old{
+                    background-color: grey;
+                    width: 100px;
+                    height: 100px;
+                    margin: 2px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    
+                }
+                #n1{
+                    display: flex;
+                    text-align: center;               
+                    align-items: center;
+                    justify-content: center;
+                   
+                }
+                #n2{
+                    display: inline-flex;
+                    text-align: center;
+                    align-items: center;
+              
+                }
+                
+
+        </style>
+<body>
+    <ul>
+        <li style="float: left;"><a href="">Article</a></li>
+        <li><a href="">Talk</a></li>
+        <li><a href="">Read</a></li>
+        <li><a href="">View source</a></li>
+        <li><a href="">View history</a></li>
+        <li><a href="">Tools</a></li>  
+    </ul>
+
+    <div id="n1">
+    <div class="new">1</div>
+    <div class="new">2</div>
+    <div class="new">3</div>
+    <div class="new">4</div></div>
+
+    <div id="n2">
+        <div class="old">one</div>
+        <div class="old">two</div>
+        <div class="old">three</div>
+        <div class="old">four</div></div>
+        
+    </div>
+</body>
+</html>
