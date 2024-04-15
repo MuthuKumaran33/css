@@ -1,0 +1,24 @@
+body{
+    font-size: 1.4rem;
+}
+.block{
+    background-color: blue;
+    width: 30vw;
+    height: 30vh;
+    color: aliceblue;
+    padding: 2rem;
+    text-align: center;
+}
+.block{
+  float: right;
+  margin: 10px;
+}
+.clear{
+    clear: both;
+}
+section{
+    display: flow-root;
+    background-color: black;
+    border: 2px solid gold;
+    padding: 20px;
+}
