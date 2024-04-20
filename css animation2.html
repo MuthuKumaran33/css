@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation_2</title>
+</head>
+<style>
+        *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            html{
+                font-size: 2rem;
+                font-family: bold;
+            }
+            .color{
+                width: 150px;
+                height: 150px;
+                background-color: aqua;
+                position: relative;
+                animation-name: change;
+                animation-duration: 5s;
+                animation-timing-function: linear;
+                animation-delay: 2s;
+                animation-iteration-count: infinite;
+                animation-direction: reverse;
+            }
+           
+            @keyframes change {
+                 0%   {background-color:red; left:0px; top:0px;}
+                 25%  {background-color:yellow; left:200px; top:0px;}
+                 50%  {background-color:blue; left:200px; top:200px;}
+                75%  {background-color:green; left:0px; top:200px;}
+                 100% {background-color:red; left:0px; top:0px;}
+}
+
+        .btn{
+                margin-top: 250px; 
+                border: 1px solid black;
+                border-radius: 3px;
+                width: 150px;
+                height: 40px;
+                text-align: center;
+                background: linear-gradient(to right, rgb(0, 0, 0) 50%, white 50%);
+                background-size: 200% 100%;
+                background-position: right bottom;
+                transition: all 1s ease-out;
+        }
+        .btn:hover{
+                background-position: left top;
+        }
+        .text{
+                color: black;
+                transition: all 2s ease-out;
+                display: block;
+        }
+        .text:hover{
+            color: white;
+
+        }
+</style>
+<body>
+        <p>Color Changes</p>
+        <div class="color"></div>
+      <div class="outer"> <div class="btn"><div class="text">Button</div></div></div>
+    
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DropDown</title>
+</head>
+    <style>
+        .btn{
+            background-color: green;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+        .dd{
+            position: relative;
+            display: inline-block;
+        }
+        .content{
+            display: none;
+            position: absolute;
+            background-color: aliceblue;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+             z-index: 1;
+        }
+        .content a{
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .content a:hover {background-color: #9b9a9a}
+
+        .dd:hover .content {
+                     display: block;
+                    }
+
+            .dd:hover .btn {
+                background-color: #254e26;
+                }
+
+      .img{
+            position: relative;
+            display: inline-block;
+        }
+        .img_content{
+            display: none;
+            position: absolute;
+            background-color: aliceblue;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+             z-index: 1;
+        }
+        .img:hover .img_content {
+                    display: block;
+                    }
+
+            .name {
+                  padding: 15px;
+                  text-align: center;
+                  color: red;
+                  
+                    }
+
+    </style>
+
+<body>
+        <h2>Dropdown Menu</h2>
+        <p>Move the mouse over the button to open the dropdown menu.</p>
+
+        <div class="dd">
+            <button class="btn">DropDown left</button>
+            <div class="content">
+                <a href="#">Html</a>
+                <a href="#">Css</a>
+                <a href="#">jquery</a>
+            </div>
+        </div>
+
+        <div class="dd" style="float: right;">
+            <button class="btn">DropDown left</button>
+            <div class="content">
+                <a href="#">Html</a>
+                <a href="#">Css</a>
+                <a href="#">jquery</a>
+            </div>
+        </div>
+        <p>
+        <div class="img" >
+            <img src="D:\muthu kumaran\watch.webp" alt="" width="200px" height="200px">
+            <div class="img_content">
+                <img src="D:\muthu kumaran\watch.webp" alt="" width="400px" height="400px">
+                <div class="name">Smart watch</div>
+            </div>
+        </div>
+        <p>
+</body>
+</html>
